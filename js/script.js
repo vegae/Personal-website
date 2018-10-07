@@ -27,7 +27,7 @@ $(document).ready(function() {
 
 
   	function offCard() {
-  		this.style.backgroundColor = "#E8ECEF";
+  		this.style.backgroundColor = "#eff2f4";
   		  		var x =  this.querySelectorAll(".st0");
   		for (i=0; i < x.length; i++) {
             	x[i].style.fill = "#071A28";
