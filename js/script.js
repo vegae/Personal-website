@@ -1,8 +1,5 @@
 $(document).ready(function() {
-    var header = $(".selector");
-  	var header_text = document.getElementsByTagName('a');
-  	var line = document.querySelectorAll("li.line");
-
+    
   	// var highlight = document.querySelectorAll(".service-item")
 
   	var highlight = document.querySelectorAll(".service-item");
@@ -35,26 +32,6 @@ $(document).ready(function() {
             }
   	}
 
-    $(window).scroll(function() {    
-        var scroll = $(window).scrollTop();
-        if (scroll >= 50) {
-            header.addClass("scrolled");
-            for (i=0; i < 4; i++) {
-            	header_text[i].style.color = "#071A28";
-            	// header_text[i].setAttribute("color", "#071A28")
-            }
-            line[0].style.borderRight = "1px solid #071A28";
-            line[1].style.borderRight = "1px solid #071A28";
-
-        } else {
-            header.removeClass("scrolled");
-            for (i=0; i < 4; i++) {
-            	header_text[i].style.color = "white";
-            }
-            line[0].style.borderRight = "2px solid white";
-            line[1].style.borderRight = "2px solid white";
-        }
-    });
 
 
 
